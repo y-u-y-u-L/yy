@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>日本動漫推薦器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>日本動漫推薦器</h1>
+    <p>根據你的喜好，推薦適合的日本動漫。</p>
+
+    <div class="form-box">
+      <label>你想看的類型：</label>
+      <select id="genre">
+        <option value="戀愛">戀愛</option>
+        <option value="戰鬥">戰鬥</option>
+        <option value="奇幻">奇幻</option>
+        <option value="懸疑">懸疑</option>
+        <option value="日常">日常</option>
+        <option value="運動">運動</option>
+      </select>
+
+      <label>你想要的觀看感受：</label>
+      <select id="mood">
+        <option value="輕鬆">輕鬆</option>
+        <option value="熱血">熱血</option>
+        <option value="感動">感動</option>
+        <option value="燒腦">燒腦</option>
+      </select>
+
+      <label>集數偏好：</label>
+      <select id="length">
+        <option value="短篇">短篇</option>
+        <option value="中篇">中篇</option>
+        <option value="長篇">長篇</option>
+      </select>
+
+      <button onclick="recommendAnime()">開始推薦</button>
+    </div>
+
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
